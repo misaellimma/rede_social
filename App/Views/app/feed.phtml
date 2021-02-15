@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col">
                 <div class="card p-3">
-                    <form action="">
+                    <form action="/postagem?pagina=feed" method="post">
                         <textarea class="form-control" name="postagem" rows="1"></textarea>
                         <div class="mt-2 d-flex">
                             <button class="btn btn-primary">Postar</button>
@@ -13,29 +13,20 @@
                 </div>
             </div>
         </div>
+        <?php foreach($this->view->postagens as $indice => $postagem){ ?>
         <div class="row">
             <div class="col mt-3">
-                <div class="card p-2">
-                    <p><strong>Nome usuario</strong><small> <span class="text text-muted">- 01/01/2020 19:00</span></small></p>
+                <div class="card p-3">
+                    <p><strong><?= $postagem['nome'] ?></strong><small> <span class="text text-muted">- <?=$postagem['data']?></span></small></p>
                     <hr class="mt-0">
-                    <p>Postagem</p>
+                    <p><?=$postagem['postagem']?></p>
                     <div class="d-flex mt-2">
                         <button class="btn btn-primary">Remover</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col mt-3">
-                <div class="card p-2">
-                    <p><strong>Nome usuario</strong><small> <span class="text text-muted">- 01/01/2020 19:00</span></small></p>
-                    <hr class="mt-0">
-                    <p>Postagem</p>
-                    <div class="d-flex mt-2">
-                        <button class="btn btn-primary">Remover</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php } ?>
+        
     </div>
 </div>

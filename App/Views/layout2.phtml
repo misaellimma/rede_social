@@ -1,84 +1,81 @@
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>meu</title>
-
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-
-	</head>
-
-	<body>
-
-		<nav class="navbar navbar-expand-md navbar-light justify-content-center" style="background-color:#1155cc;">
-			<a class="navbar-brand text-white" href="/">
-                <img src="images/icon-72x72.png" width="30" height="30">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"></button>
-            <form class="form-inline" action="">
-                <div class="input-group">
-                    <input type="search" class="form-control" placeholder="pesquisar">
-                    <div class="input-group-prepend">
-                        <button class="input-group-text" >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                        </svg>
-                        </button>
-                    </div>
-                </div>
-            </form>
-			<div class="">
-				<ul class="navbar-nav navbar">
-                    <li class="nav-item"><a class="text-white nav-link" href="/feed">Feed</a></li>
-                    <li class="nav-item"><a class="text-white nav-link" href="/perfil">Perfil</a></li>
-                    <li class="nav-item"><a class="text-white nav-link" href="/sair">Sair</a></li>
-				</ul>
-			</div>
-        </nav>
+<head>
+    <meta charset="utf-8" />
+    <title>meu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color:#1155cc;">
         <div class="container-fluid max-tela">
-            <div class="row my-3">
-                <div class="col-md-12">
+            <a class="navbar-brand text-white" href="/">
+                <img src="images/icon-72x72.png" width="30" height="30">
+                Json
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarcollapse">
+                <div class="navbar-nav navbar mr-auto">
+                    <a class="text-white nav-link" href="/feed">Feed</a>
+                    <a class="text-white nav-link" href="/perfil">Perfil</a>
+                    <a class="text-white nav-link" href="/sair">Sair</a>
+                </div>
+                <form class="form-inline my-2 my-lg-0">
+                    	<div class="input-group">
+							<input class="form-control" type="search" placeholder="Pesquisar usuários">
+							<div class="input-group-prepend">
+								<button class="input-group-text" type="submit">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+										<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</form>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid max-tela">
+        <div class="row my-3">
+            <div class="col-md-12">
+                <div class="card">
                     <div class="card">
-                        <div class="card">
-                            <a href="#">
-                                <img class="rounded" src="images/Facebook.jpeg" style="width: 100%">
-                            </a>
-                            <a href="#">
-                                <img src="images/usuario.svg" class="rounded-circle figure1 img-fluid">
-                            </a>
+                        <a href="#">
+                            <img class="rounded" src="images/Facebook.jpeg" style="width: 100%">
+                        </a>
+                        <a href="#">
+                            <img src="images/usuario.svg" class="rounded-circle figure1 img-fluid">
+                        </a>
+                    </div>
+                    <div class="text-left">
+                        <div class="p-2">
+                            <h3 class="card-title ml-3"><?=$nome = isset($this->view->infoUsuario['nome']) ? $this->view->infoUsuario['nome'] : 'Nome'?></h3>
                         </div>
-                        <div class="text-left">
-                            <div class="p-2">
-                                <h3 class="card-title ml-3">Nome</h3>
-                            </div>
-                        <div class="px-2 border">   
-                            <ul class="nav nav-tabs nav-justified" style="background-color: #ffffff;">
-                                <li class="nav-item">
-                                    <a class="nav-link <? if($this->view->page == 'sobre'){echo 'active';}?> py-2" href="/sobre">Sobre</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link <? if($this->view->page == 'perfil'){echo 'active';}?> py-2" href="/perfil">Postagens</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link <? if($this->view->page == 'fotos'){echo 'active';}?> py-2" href="/fotos">Fotos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link <? if($this->view->page == 'amigos'){echo 'active';}?> py-2" href="/amigos">Amigos</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="px-2 border">   
+                        <ul class="nav nav-tabs nav-justified" style="background-color: #ffffff;">
+                            <li class="nav-item">
+                                <a class="nav-link <? if($this->view->page == 'sobre'){echo 'active';}?> py-2" href="/sobre">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link <? if($this->view->page == 'perfil'){echo 'active';}?> py-2" href="/perfil">Postagens</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link <? if($this->view->page == 'fotos'){echo 'active';}?> py-2" href="/fotos">Fotos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link <? if($this->view->page == 'amigos'){echo 'active';}?> py-2" href="/amigos">Amigos</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <?= $this->content() ?>
         </div>
-	</body>
-
+        <?= $this->content() ?>
+    </div>
+</body>
 </html>

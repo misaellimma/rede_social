@@ -3,15 +3,14 @@ html, body {
 }
 
 
-
-img{
+.img{
   width: 100%;
   margin: auto;
   float: none;
 }
 
 .max-tela{
-  max-width: 900px;
+  max-width: 950px;
   margin: auto;
   float: none;
 }

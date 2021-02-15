@@ -48,5 +48,14 @@
             return $this;
         }
 
+        public function getInfoUsuario(){
+            $query = 'select nome from usuarios where id = :id';
+            $stmt = $this->db->prepare($query);
+            $stmt->bindValue(':id', $this->__get('id'));
+            $stmt->execute();
+
+            return $stmt->fetch(\PDO::FETCH_ASSOC);
+        }
+
     }
 ?>

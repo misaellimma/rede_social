@@ -73,6 +73,11 @@
 				'controller' => 'AppController',
 				'action' => 'amigos'
 			);
+			$routes['postagem'] = array(
+				'route' => '/postagem',
+				'controller' => 'AppController',
+				'action' => 'postagem'
+			);
 
 			$this->setRoutes($routes);
 		}
