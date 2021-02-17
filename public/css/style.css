@@ -3,6 +3,16 @@ html, body {
 }
 
 
+
+.amigos{
+  min-width: 10rem;
+  max-width: 11rem;
+  background-color: #ffffff; 
+  margin: auto; 
+  float: none;
+}
+
+
 .img{
   width: 100%;
   margin: auto;
@@ -11,8 +21,7 @@ html, body {
 
 .max-tela{
   max-width: 950px;
-  margin: auto;
-  float: none;
+  
 }
 
 .figure1{
